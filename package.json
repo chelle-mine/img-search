@@ -1,0 +1,29 @@
+{
+  "name": "img-search",
+  "version": "1.0.0",
+  "description": "Serve up image search results",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chelle-mine/img-search.git"
+  },
+  "keywords": [
+    "Node.js",
+    "FreeCodeCamp"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^3.0.0-rc0",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0"
+  }
+}

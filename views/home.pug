@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+  head
+    title Image Search API
+    style.
+      body, html {
+        height: 100%;
+        margin: 0px 10px;
+      }
+      code {
+        background-color: #ececec;
+        color: #005e59;
+        border-radius: 3px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      td {
+        border: 1px solid #005e59;
+        padding: 5px;
+      }
+      td.field {
+        width: 10%;
+        background-color: #ececec;
+      }
+    
+  body
+    h1 Image Search API
+    h2 Consume Google Image Search results in JSON format
+    h2 Endpoints:
+    h3
+      code /api/imagesearch/{search_terms}[]
+    p
+      | Returns JSON containing an array of #[code items] with the following fields:
+      table
+        tr
+          td(class="field" colspan="2"): code: strong link
+          td Image URL
+        tr
+          td(class="field" colspan="2"): code: strong snippet
+          td Brief description text
+        tr
+          td(class="field" rowspan="2"): code: strong image
+          td(class="field"): code: strong contextLink
+          td Image website
+        tr
+          td(class="field"): code: strong thumbnailLink
+          td Image thumbnail URL
+    h3
+      code /api/latest/imagesearch
+    p Returns an array of JSON objects with the following fields:
+      table
+        tr
+          td(class="field"): code: strong term
+          td Search term
+        tr
+          td(class="field"): code: strong when
+          td Time when search was made (UTC date string)
+    footer(style="position:absolute;bottom:0px")
+      p: a(href="https://github.com/chelle-mine/img-search") Github repo
