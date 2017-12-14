@@ -30,7 +30,7 @@ html(lang="en")
     h2 Consume Google Image Search results in JSON format
     h2 Endpoints:
     h3
-      code /api/imagesearch/{search_terms}[]
+    code /api/imagesearch/{search_terms}[?offset={integer}]
     p
       | Returns JSON containing an array of #[code items] with the following fields:
       table
@@ -47,6 +47,7 @@ html(lang="en")
         tr
           td(class="field"): code: strong thumbnailLink
           td Image thumbnail URL
+    p An optional #[code offset] query can be sent to paginate responses
     h3
       code /api/latest/imagesearch
     p Returns an array of JSON objects with the following fields:
